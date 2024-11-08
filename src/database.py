@@ -6,6 +6,10 @@ from sqlalchemy.ext.declarative import declarative_base
 
 # url de connexion de la base
 SQLALCHEMY_DATABASE_URL = "mysql://root:@localhost/fromagerie_com"
+                        # connector : mysql / mysql+pymysql
+                        # utilisateur : root
+                        # password : root
+                        # base de données : fromagerie_com
 
 # permet de définir les paramètre de connexion à la base
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
